@@ -83,7 +83,7 @@ function textToImg() {
 
     // context.font = fontWeight + ' ' + fontSize + 'px sans-serif';
     // context.textBaseline = 'top';
-    // canvas.style.display = 'none';
+    canvas.style.display = 'none';
     // function fillTxt(text) {
     //     while (text.length > len) {
     //         var txtLine = text.substring(0, len);
@@ -100,9 +100,9 @@ function textToImg() {
     //     fillTxt(txtArray[j]);
     //     context.fillText('\n', 0, fontSize * (3 / 2) * i++, canvas.width);
     // }
-    // var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-    // var img = $("img");
-    // img.src = canvas.toDataURL("image/png");
+    var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+    var img = $("img");
+    img.src = canvas.toDataURL("image/png");
 }
 // function changeColor(name) {
 //     var c = $(name + "_c");
